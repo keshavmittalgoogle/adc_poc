@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: <var.deployment_name> # User input deployment name.
+  namespace: <var.namespace> # User input namespace, default if not provided.
+  labels:
+    app: <var.deployment_name>
+    app.kubernetes.io/name: <var.deployment_name>
+    app.kubernetes.io/instance: <var.deployment_name>
+    # Any other user provided labels.
+spec:
+  replicas: <var.replica_count> # User input replica count, default to 1 if not provided.
+  selector:
+    matchLabels:
+      app: <var.deployment_name>
+      app.kubernetes.io/name: <var.deployment_name>
+      app.kubernetes.io/instance: <var.deployment_name>
+      # Any other user provided labels.
+  template:
+    metadata:
+      labels:
+        app: <var.deployment_name>
+        app.kubernetes.io/name: <var.deployment_name>
+        app.kubernetes.io/instance: <var.deployment_name>
+        # Any other user provided labels.
+    spec:
+      serviceAccountName: <var.service_account_name> # User input kubernetes service account. Newly created if not provided.
+      containers:
+      - name: <var.containers.container_name>
+        image: <var.containers.image> # User input container image
+        ports: 
+        - containerPort: <var.containers.ports.container_port> # User input container port. Default to 80 if not provided.
+          name: <var.containers.ports.name> # User input container port name. Default to "http" if not provided.
+        env: # User input environment variables, if provided.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        resources:
+          limits:
+            cpu: <var.containers.resources.limits.cpu> # User input cpu limit. Default to 500m if not provided.
+            memory: <var.containers.resources.limits.memory> # User input memory limit. Default to 512Mi if not provided.
+          requests: 
+            cpu: <var.containers.resources.requests.cpu> # User input cpu request. Default to 100m if not provided.
+            memory: <var.containers.resources.requests.memory> # User input memory request. Default to 256Mi if not provided.
