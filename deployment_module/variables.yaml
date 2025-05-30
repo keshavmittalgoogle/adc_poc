@@ -24,6 +24,7 @@
   description: Kuberenetes Service account name used to commnicate with Kubernetes API server
   varType: string
   required: true
+  defaultValue: default
 - name: containers
   description: Containers to run on the deployments.
   varType: |-

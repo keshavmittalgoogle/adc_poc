@@ -32,28 +32,28 @@ spec:
         - containerPort: <var.containers.ports.container_port> # User input container port. Default to 80 if not provided.
           name: <var.containers.ports.name> # User input container port name. Default to "http" if not provided.
         env: # User input environment variables, if provided.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
-        - name: <var.containers.env.name> # User input environment variable name.
-          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name.0> # User input environment variable name.
+          value: <var.containers.env.value.0> # User input environment variable value.
+        - name: <var.containers.env.name.1> # User input environment variable name.
+          value: <var.containers.env.value.1> # User input environment variable value.
+        - name: <var.containers.env.name.2> # User input environment variable name.
+          value: <var.containers.env.value.2> # User input environment variable value.
+        - name: <var.containers.env.name.3> # User input environment variable name.
+          value: <var.containers.env.value.3> # User input environment variable value.
+        - name: <var.containers.env.name.4> # User input environment variable name.
+          value: <var.containers.env.value.4> # User input environment variable value.
+        - name: <var.containers.env.name.5> # User input environment variable name.
+          value: <var.containers.env.value.5> # User input environment variable value.
+        - name: <var.containers.env.name.6> # User input environment variable name.
+          value: <var.containers.env.value.6> # User input environment variable value.
+        - name: <var.containers.env.name.7> # User input environment variable name.
+          value: <var.containers.env.value.7> # User input environment variable value.
+        - name: <var.containers.env.name.8> # User input environment variable name.
+          value: <var.containers.env.value.8> # User input environment variable value.
+        - name: <var.containers.env.name.9> # User input environment variable name.
+          value: <var.containers.env.value.9> # User input environment variable value.
+        - name: <var.containers.env.name.10> # User input environment variable name.
+          value: <var.containers.env.value.10> # User input environment variable value.
         resources:
           limits:
             cpu: <var.containers.resources.limits.cpu> # User input cpu limit. Default to 500m if not provided.
