@@ -34,6 +34,26 @@ spec:
         env: # User input environment variables, if provided.
         - name: <var.containers.env.name> # User input environment variable name.
           value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
+        - name: <var.containers.env.name> # User input environment variable name.
+          value: <var.containers.env.value> # User input environment variable value.
         resources:
           limits:
             cpu: <var.containers.resources.limits.cpu> # User input cpu limit. Default to 500m if not provided.

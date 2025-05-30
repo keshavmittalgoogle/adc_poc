@@ -76,5 +76,5 @@ spec:
           - source:
               source: Service
             spec:
-              outputExpr: "{value: name + \".\" + namespace + \":\" + ports.port, name: name + \"_SERVICE_ARRD\"}"
+              outputExpr: "{value: name + \".\" + namespace + \":\" + ports.port, name: name + \"_SERVICE_ADDR\"}"
               inputPath: env
